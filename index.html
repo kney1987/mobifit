@@ -1,333 +1,588 @@
 <!doctype html>
 <html lang="nl">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZWNFG51SX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script>
+      const GA_ID = "G-3ZWNFG51SX";
+      const ANALYTICS_CONSENT_KEY = "mobifitAnalyticsConsent";
 
-    gtag('config', 'G-3ZWNFG51SX');
-  </script>
+      window.dataLayer = window.dataLayer || [];
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobifit Dessel | Groepsfitness voor 50-plussers</title>
-  <link rel="icon" type="image/png" href="logo-mobifit.jpg">
-  <link rel="canonical" href="https://mobifit.be/">
-
-  <meta name="description" content="Groepsfitness voor 50-plussers en senioren in Dessel. Veilig bewegen onder begeleiding van een ervaren coach. Eerste proefles gratis.">
-  <meta name="theme-color" content="#163A5F">
-  <meta name="author" content="Mobifit">
-
-  <meta property="og:title" content="Mobifit | Groepsfitness voor 50-plussers">
-  <meta property="og:description" content="Blijf fit, beweeg met plezier en werk aan je gezondheid. Iedere donderdag in Dessel. Eerste proefles gratis.">
-  <meta property="og:image" content="https://mobifit.be/og-image.jpg">
-  <meta property="og:url" content="https://mobifit.be">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            mobiblue: '#163A5F',
-            mobiblue2: '#0F2A45',
-            mobiyellow: '#F4B63D',
-            mobisoft: '#F5F7FA'
-          },
-          boxShadow: {
-            soft: '0 18px 45px rgba(15, 42, 69, 0.12)'
-          }
-        }
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
-  </script>
-</head>
-<body class="bg-white text-slate-800 antialiased">
-  <header class="sticky top-0 z-40 border-b border-white/10 bg-mobiblue/95 text-white backdrop-blur">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="#top" class="flex items-center gap-4" aria-label="Mobifit Dessel home">
-        <img
+
+      gtag("consent", "default", {
+        analytics_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        wait_for_update: 500,
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobifit Dessel | Groepsfitness voor 50-plussers</title>
+    <link rel="icon" type="image/png" href="logo-mobifit.jpg" />
+    <link rel="canonical" href="https://mobifit.be/" />
+
+    <meta
+      name="description"
+      content="Groepsfitness voor 50-plussers en senioren in Dessel. Veilig bewegen onder begeleiding van een ervaren coach. Eerste proefles gratis."
+    />
+    <meta name="theme-color" content="#163A5F" />
+    <meta name="author" content="Mobifit" />
+
+    <meta
+      property="og:title"
+      content="Mobifit | Groepsfitness voor 50-plussers"
+    />
+    <meta
+      property="og:description"
+      content="Blijf fit, beweeg met plezier en werk aan je gezondheid. Iedere donderdag in Dessel. Eerste proefles gratis."
+    />
+    <meta property="og:image" content="https://mobifit.be/og-image.jpg" />
+    <meta property="og:url" content="https://mobifit.be" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mobiblue: "#163A5F",
+              mobiblue2: "#0F2A45",
+              mobiyellow: "#F4B63D",
+              mobisoft: "#F5F7FA",
+            },
+            boxShadow: {
+              soft: "0 18px 45px rgba(15, 42, 69, 0.12)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-slate-800 antialiased">
+    <header
+      class="sticky top-0 z-40 border-b border-white/10 bg-mobiblue/95 text-white backdrop-blur"
+    >
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8"
+      >
+        <a
+          href="#top"
+          class="flex items-center gap-4"
+          aria-label="Mobifit Dessel home"
+        >
+          <img
             src="logo-mobifit.jpg"
             alt="Mobifit logo"
             class="h-14 w-auto rounded-lg bg-white p-1 shadow-md"
-        />
-        <div>
+          />
+          <div>
             <p class="text-2xl font-bold leading-none">Mobifit</p>
-            <p class="text-sm text-white/75">
-                Groepsfitness voor 50-plussers
+            <p class="text-sm text-white/75">Groepsfitness voor 50-plussers</p>
+          </div>
+        </a>
+        <nav
+          class="hidden items-center gap-7 text-sm font-medium md:flex"
+          aria-label="Hoofdnavigatie"
+        >
+          <a class="hover:text-mobiyellow" href="#voor-wie">Voor wie</a>
+          <a class="hover:text-mobiyellow" href="#les">De les</a>
+          <a class="hover:text-mobiyellow" href="#info">Praktisch</a>
+          <a class="hover:text-mobiyellow" href="#contact">Contact</a>
+        </nav>
+        <a
+          href="tel:+32474310355"
+          onclick="trackAnalyticsEvent('phone_click')"
+          class="hidden rounded-full bg-mobiyellow px-5 py-3 text-sm font-bold text-mobiblue shadow-sm transition hover:bg-white sm:inline-flex"
+          >Bel Leo</a
+        >
+      </div>
+    </header>
+
+    <div
+      id="cookie-banner"
+      class="fixed bottom-5 left-1/2 z-50 hidden w-[95%] max-w-3xl -translate-x-1/2 rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-slate-200"
+    >
+      <div
+        class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between"
+      >
+        <div>
+          <h3 class="text-lg font-bold text-mobiblue">Cookies</h3>
+
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            We gebruiken noodzakelijke opslag voor de werking van de website.
+            Met jouw toestemming gebruiken we Google Analytics om anoniem
+            inzicht te krijgen in het gebruik van de website. Lees meer in onze
+            <a
+              href="privacy.html"
+              class="font-semibold text-mobiblue underline"
+            >
+              privacyverklaring </a
+            >.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <button
+            id="necessaryOnly"
+            type="button"
+            class="rounded-full border border-slate-300 px-6 py-3 font-semibold text-mobiblue hover:bg-slate-100"
+          >
+            Alleen noodzakelijk
+          </button>
+
+          <button
+            id="acceptAnalytics"
+            type="button"
+            class="rounded-full bg-mobiblue px-6 py-3 font-semibold text-white hover:bg-mobiblue2"
+          >
+            Analytics toestaan
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="relative overflow-hidden bg-mobiblue text-white">
+        <div class="absolute inset-0 opacity-20">
+          <div
+            class="h-full w-full bg-[radial-gradient(circle_at_top_left,_#F4B63D,_transparent_34%),radial-gradient(circle_at_bottom_right,_#ffffff,_transparent_28%)]"
+          ></div>
+        </div>
+        <div
+          class="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24"
+        >
+          <div class="flex flex-col justify-center">
+            <p
+              class="mb-4 inline-flex w-fit rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-mobiyellow ring-1 ring-white/15"
+            >
+              Elke donderdag om 16:00 · De Spin Dessel
             </p>
-        </div>
-
-    </a>
-      <nav class="hidden items-center gap-7 text-sm font-medium md:flex" aria-label="Hoofdnavigatie">
-        <a class="hover:text-mobiyellow" href="#voor-wie">Voor wie</a>
-        <a class="hover:text-mobiyellow" href="#les">De les</a>
-        <a class="hover:text-mobiyellow" href="#info">Praktisch</a>
-        <a class="hover:text-mobiyellow" href="#contact">Contact</a>
-      </nav>
-      <a href="tel:+32474310355" onclick="gtag('event','phone_click');" class="hidden rounded-full bg-mobiyellow px-5 py-3 text-sm font-bold text-mobiblue shadow-sm transition hover:bg-white sm:inline-flex">Bel Leo</a>
-    </div>
-  </header>
-
-  <div id="cookie-banner" class="fixed bottom-5 left-1/2 z-50 hidden w-[95%] max-w-3xl -translate-x-1/2 rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-slate-200">
-    <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-        <div>
-            <h3 class="text-lg font-bold text-mobiblue">
-                Cookies
-            </h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">
-                Deze website gebruikt uitsluitend functionele cookies om de website correct te laten werken.
-                Er worden geen tracking- of marketingcookies geplaatst.
-                Lees onze
-                <a href="privacy.html" class="font-semibold text-mobiblue underline">
-                    privacyverklaring
-                </a>.
+            <h1
+              class="max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
+            >
+              Groepsfitness voor 50-plussers en senioren in Dessel
+            </h1>
+            <p
+              class="mt-6 max-w-2xl text-lg leading-8 text-white/82 sm:text-xl"
+            >
+              Werk op een veilige en laagdrempelige manier aan mobiliteit,
+              spierkracht, balans en conditie. Je eerste proefles is volledig
+              gratis.
             </p>
-        </div>
-        <button
-            id="acceptCookies"
-            class="rounded-full bg-mobiblue px-6 py-3 font-semibold text-white hover:bg-mobiblue2">
-            Begrepen
-        </button>
-    </div>
-  </div>
-
-  <main id="top">
-    <section class="relative overflow-hidden bg-mobiblue text-white">
-      <div class="absolute inset-0 opacity-20">
-        <div class="h-full w-full bg-[radial-gradient(circle_at_top_left,_#F4B63D,_transparent_34%),radial-gradient(circle_at_bottom_right,_#ffffff,_transparent_28%)]"></div>
-      </div>
-      <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24">
-        <div class="flex flex-col justify-center">
-          <p class="mb-4 inline-flex w-fit rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-mobiyellow ring-1 ring-white/15">Elke donderdag om 16:00 · De Spin Dessel</p>
-          <h1 class="max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">Groepsfitness voor 50-plussers en senioren in Dessel</h1>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/82 sm:text-xl">Werk op een veilige en laagdrempelige manier aan mobiliteit, spierkracht, balans en conditie. Je eerste proefles is volledig gratis.</p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="mailto:leoboonen1@gmail.com?subject=Gratis%20proefles%20Mobifit" onclick="gtag('event','trial_click');" class="rounded-full bg-mobiyellow px-7 py-4 text-center font-bold text-mobiblue shadow-soft transition hover:bg-white">Vraag gratis proefles aan</a>
-            <a href="tel:+32474310355" onclick="gtag('event','phone_click');" class="rounded-full bg-white/10 px-7 py-4 text-center font-bold text-white ring-1 ring-white/20 transition hover:bg-white hover:text-mobiblue">Bel 0474 31 03 55</a>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="mailto:leoboonen1@gmail.com?subject=Gratis%20proefles%20Mobifit"
+                onclick="trackAnalyticsEvent('trial_click')"
+                class="rounded-full bg-mobiyellow px-7 py-4 text-center font-bold text-mobiblue shadow-soft transition hover:bg-white"
+                >Vraag gratis proefles aan</a
+              >
+              <a
+                href="tel:+32474310355"
+                onclick="trackAnalyticsEvent('phone_click')"
+                class="rounded-full bg-white/10 px-7 py-4 text-center font-bold text-white ring-1 ring-white/20 transition hover:bg-white hover:text-mobiblue"
+                >Bel 0474 31 03 55</a
+              >
+            </div>
+            <p class="mt-5 text-sm text-white/70">
+              Geen sportieve ervaring nodig. Iedereen beweegt op eigen niveau.
+            </p>
           </div>
-          <p class="mt-5 text-sm text-white/70">Geen sportieve ervaring nodig. Iedereen beweegt op eigen niveau.</p>
-        </div>
 
-        <div class="rounded-[2rem] bg-white/10 p-3 shadow-soft ring-1 ring-white/15">
-          <div class="grid min-h-[420px] place-items-center rounded-[1.5rem] border-2 border-dashed border-white/35 bg-white/10 p-8 text-center">
-          	<img class="rounded-[1.5rem]" src="Facebook1.jpg" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-mobisoft py-14">
-      <div class="mx-auto grid max-w-7xl gap-4 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
-        <div class="rounded-3xl bg-white p-7 shadow-sm"><p class="text-sm font-bold uppercase tracking-wide text-mobiblue">Wanneer</p><p class="mt-2 text-2xl font-bold">Donderdag 16:00</p></div>
-        <div class="rounded-3xl bg-white p-7 shadow-sm"><p class="text-sm font-bold uppercase tracking-wide text-mobiblue">Waar</p><p class="mt-2 text-2xl font-bold">Polyvalente zaal <br />De Spin, Dessel</p></div>
-        <div class="rounded-3xl bg-white p-7 shadow-sm"><p class="text-sm font-bold uppercase tracking-wide text-mobiblue">Proefles</p><p class="mt-2 text-2xl font-bold">Eerste les gratis</p></div>
-      </div>
-    </section>
-
-    <section id="voor-wie" class="py-20 lg:py-28">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <div>
-          <p class="font-bold text-mobiyellow">Voor wie?</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl">Voor iedereen die fit wil blijven zonder prestatiedruk</h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">Mobifit is er voor 50-plussers en senioren die soepel willen blijven bewegen, sterker willen worden en graag actief blijven in groep.</p>
-          <div class="mt-8 grid gap-3 sm:grid-cols-2">
-            <div class="rounded-2xl bg-mobisoft p-5 font-semibold">Mobiliteit onderhouden</div>
-            <div class="rounded-2xl bg-mobisoft p-5 font-semibold">Balans verbeteren</div>
-            <div class="rounded-2xl bg-mobisoft p-5 font-semibold">Spierkracht behouden</div>
-            <div class="rounded-2xl bg-mobisoft p-5 font-semibold">Samen bewegen</div>
-          </div>
-        </div>
-        <div class="rounded-[2rem] bg-mobisoft p-3">
-          <div class="grid min-h-[360px] place-items-center rounded-[1.5rem] border-2 border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">
-            <img class="rounded-[1.5rem]" src="Facebook3.jpg" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="les" class="bg-mobiblue py-20 text-white lg:py-28">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl">
-          <p class="font-bold text-mobiyellow">Zo verloopt een les</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Rustig starten, veilig bewegen, goed gevoel achteraf</h2>
-        </div>
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
-            <span class="grid h-12 w-12 place-items-center rounded-full bg-mobiyellow font-bold text-mobiblue">1</span>
-            <h3 class="mt-6 text-xl font-bold">Opwarming</h3>
-            <p class="mt-3 text-white/75">Rustige oefeningen om het lichaam klaar te maken.</p>
-          </article>
-          <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
-            <span class="grid h-12 w-12 place-items-center rounded-full bg-mobiyellow font-bold text-mobiblue">2</span>
-            <h3 class="mt-6 text-xl font-bold">Oefeningen op niveau</h3>
-            <p class="mt-3 text-white/75">Aandacht voor kracht, balans, mobiliteit en conditie.</p>
-          </article>
-          <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
-            <span class="grid h-12 w-12 place-items-center rounded-full bg-mobiyellow font-bold text-mobiblue">3</span>
-            <h3 class="mt-6 text-xl font-bold">Afsluiten</h3>
-            <p class="mt-3 text-white/75">Je gaat naar huis met beweging, structuur en sociaal contact.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-20 lg:py-28">
-  <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-
-    <!-- Foto Eric -->
-    <div class="rounded-[2rem] bg-mobisoft p-3 shadow-sm">
-      <div class="overflow-hidden rounded-[1.5rem] bg-white">
-
-        <!-- Vervang coach-eric.jpg door de echte foto -->
-        <img
-          src="00P1o00001lykLEEAY.png"
-          alt="Eric Mens - Coach Mobifit"
-          class="h-[500px] w-full object-cover"
-        />
-
-      </div>
-    </div>
-
-    <!-- Tekst -->
-    <div>
-
-      <span class="font-bold text-mobiyellow uppercase tracking-wide">
-        Jouw coach
-      </span>
-
-      <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl">
-        Begeleid door Eric Mens
-      </h2>
-
-      <p class="mt-6 text-lg leading-8 text-slate-600">
-        Eric Mens begeleidt de Mobifit-lessen met meer dan
-        <strong>26 jaar ervaring</strong> in het coachen van mensen
-        naar een fitter en gezonder leven.
-      </p>
-
-      <p class="mt-4 text-lg leading-8 text-slate-600">
-        Tijdens de lessen staat veilig en verantwoord bewegen centraal.
-        De oefeningen worden aangepast aan het niveau van de deelnemers,
-        zodat iedereen op zijn of haar eigen tempo kan meedoen.
-      </p>
-
-      <div class="mt-8 grid gap-4 sm:grid-cols-2">
-
-        <div class="rounded-2xl bg-mobisoft p-5">
-          <p class="font-bold text-mobiblue">26+ jaar ervaring</p>
-          <p class="mt-1 text-sm text-slate-600">
-            Ruime ervaring als personal trainer.
-          </p>
-        </div>
-
-        <div class="rounded-2xl bg-mobisoft p-5">
-          <p class="font-bold text-mobiblue">Persoonlijke begeleiding</p>
-          <p class="mt-1 text-sm text-slate-600">
-            Aandacht voor iedere deelnemer.
-          </p>
-        </div>
-
-        <div class="rounded-2xl bg-mobisoft p-5">
-          <p class="font-bold text-mobiblue">Voor ieder niveau</p>
-          <p class="mt-1 text-sm text-slate-600">
-            Ook geschikt als je lang niet hebt gesport.
-          </p>
-        </div>
-
-        <div class="rounded-2xl bg-mobisoft p-5">
-          <p class="font-bold text-mobiblue">Veilig bewegen</p>
-          <p class="mt-1 text-sm text-slate-600">
-            Gericht op mobiliteit, kracht en vitaliteit.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-    <section id="info" class="bg-mobisoft py-20 lg:py-28">
-      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <div>
-          <p class="font-bold text-mobiyellow">Praktische info</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl">Kom vrijblijvend proberen</h2>
-          <dl class="mt-8 space-y-5 text-lg">
-            <div class="rounded-2xl bg-white p-5"><dt class="font-bold text-mobiblue">Wanneer</dt><dd class="mt-1 text-slate-600">Elke donderdag om 16:00 uur</dd></div>
-            <div class="rounded-2xl bg-white p-5"><dt class="font-bold text-mobiblue">Waar</dt><dd class="mt-1 text-slate-600">Polyvalente zaal De Spin, Dessel</dd></div>
-            <div class="rounded-2xl bg-white p-5"><dt class="font-bold text-mobiblue">Prijs</dt><dd class="mt-1 text-slate-600">De allereerste proefles is volledig gratis</dd></div>
-          </dl>
-        </div>
-        <div class="rounded-[2rem] bg-white p-3 shadow-sm">
-          <div class="grid min-h-[430px] place-items-center rounded-[1.5rem] border-2 border-dashed border-slate-300 bg-mobisoft p-8 text-center text-slate-500">
-          	<img class="rounded-[1.5rem]" src="aa531f_9d032c57993a4027b2cc8fd97855a1fb~mv2.jpg" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-20 lg:py-28">
-      <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
-        <div class="rounded-[2rem] bg-mobisoft p-3">
-          <div class="grid min-h-[360px] place-items-center rounded-[1.5rem] border-2 border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">
-            <div>
-                <img class="rounded-[1.5rem]" src="Facebook5.jpg" />
+          <div
+            class="rounded-[2rem] bg-white/10 p-3 shadow-soft ring-1 ring-white/15"
+          >
+            <div
+              class="grid min-h-[420px] place-items-center rounded-[1.5rem] border-2 border-dashed border-white/35 bg-white/10 p-8 text-center"
+            >
+              <img class="rounded-[1.5rem]" src="Facebook1.jpg" />
             </div>
           </div>
         </div>
-        <div>
-          <p class="font-bold text-mobiyellow">Initiatiefnemer</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl">Een lokaal initiatief van Leo Boonen</h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">Mobifit is ontstaan vanuit het initiatief van Leo Boonen. Als gepensioneerde en lokaal betrokken Desselaar zag hij hoe belangrijk het is om ook op latere leeftijd in beweging te blijven.</p>
-          <p class="mt-5 text-lg leading-8 text-slate-600">Leo is het eerste aanspreekpunt voor vragen en nieuwe deelnemers. De lessen zelf worden begeleid door een gediplomeerde coach.</p>
+      </section>
+
+      <section class="bg-mobisoft py-14">
+        <div
+          class="mx-auto grid max-w-7xl gap-4 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
+        >
+          <div class="rounded-3xl bg-white p-7 shadow-sm">
+            <p class="text-sm font-bold uppercase tracking-wide text-mobiblue">
+              Wanneer
+            </p>
+            <p class="mt-2 text-2xl font-bold">Donderdag 16:00</p>
+          </div>
+          <div class="rounded-3xl bg-white p-7 shadow-sm">
+            <p class="text-sm font-bold uppercase tracking-wide text-mobiblue">
+              Waar
+            </p>
+            <p class="mt-2 text-2xl font-bold">
+              Polyvalente zaal <br />De Spin, Dessel
+            </p>
+          </div>
+          <div class="rounded-3xl bg-white p-7 shadow-sm">
+            <p class="text-sm font-bold uppercase tracking-wide text-mobiblue">
+              Proefles
+            </p>
+            <p class="mt-2 text-2xl font-bold">Eerste les gratis</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="bg-mobiblue px-4 py-16 text-white sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-5xl rounded-[2rem] bg-white p-8 text-center text-mobiblue shadow-soft lg:p-12">
-        <p class="font-bold text-mobiyellow">Gratis proefles</p>
-        <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Zin om eens mee te doen?</h2>
-        <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600">Neem contact op met Leo. Hij helpt je graag verder met praktische info of je eerste gratis proefles.</p>
-        <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <a href="tel:+32474310355" onclick="gtag('event','phone_click');" class="rounded-full bg-mobiyellow px-7 py-4 font-bold text-mobiblue transition hover:bg-mobiblue hover:text-white">Bel Leo</a>
-          <a href="mailto:leoboonen1@gmail.com?subject=Gratis%20proefles%20Mobifit" onclick="gtag('event','trial_click');" class="rounded-full bg-mobiblue px-7 py-4 font-bold text-white transition hover:bg-mobiblue2">Mail voor proefles</a>
+      <section id="voor-wie" class="py-20 lg:py-28">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8"
+        >
+          <div>
+            <p class="font-bold text-mobiyellow">Voor wie?</p>
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl"
+            >
+              Voor iedereen die fit wil blijven zonder prestatiedruk
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">
+              Mobifit is er voor 50-plussers en senioren die soepel willen
+              blijven bewegen, sterker willen worden en graag actief blijven in
+              groep.
+            </p>
+            <div class="mt-8 grid gap-3 sm:grid-cols-2">
+              <div class="rounded-2xl bg-mobisoft p-5 font-semibold">
+                Mobiliteit onderhouden
+              </div>
+              <div class="rounded-2xl bg-mobisoft p-5 font-semibold">
+                Balans verbeteren
+              </div>
+              <div class="rounded-2xl bg-mobisoft p-5 font-semibold">
+                Spierkracht behouden
+              </div>
+              <div class="rounded-2xl bg-mobisoft p-5 font-semibold">
+                Samen bewegen
+              </div>
+            </div>
+          </div>
+          <div class="rounded-[2rem] bg-mobisoft p-3">
+            <div
+              class="grid min-h-[360px] place-items-center rounded-[1.5rem] border-2 border-dashed border-slate-300 bg-white p-8 text-center text-slate-500"
+            >
+              <img class="rounded-[1.5rem]" src="Facebook3.jpg" />
+            </div>
+          </div>
         </div>
-        <p class="mt-6 text-slate-600">0474 31 03 55 · leoboonen1@gmail.com</p>
+      </section>
+
+      <section id="les" class="bg-mobiblue py-20 text-white lg:py-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="font-bold text-mobiyellow">Zo verloopt een les</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Rustig starten, veilig bewegen, goed gevoel achteraf
+            </h2>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
+              <span
+                class="grid h-12 w-12 place-items-center rounded-full bg-mobiyellow font-bold text-mobiblue"
+                >1</span
+              >
+              <h3 class="mt-6 text-xl font-bold">Opwarming</h3>
+              <p class="mt-3 text-white/75">
+                Rustige oefeningen om het lichaam klaar te maken.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
+              <span
+                class="grid h-12 w-12 place-items-center rounded-full bg-mobiyellow font-bold text-mobiblue"
+                >2</span
+              >
+              <h3 class="mt-6 text-xl font-bold">Oefeningen op niveau</h3>
+              <p class="mt-3 text-white/75">
+                Aandacht voor kracht, balans, mobiliteit en conditie.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white/10 p-7 ring-1 ring-white/15">
+              <span
+                class="grid h-12 w-12 place-items-center rounded-full bg-mobiyellow font-bold text-mobiblue"
+                >3</span
+              >
+              <h3 class="mt-6 text-xl font-bold">Afsluiten</h3>
+              <p class="mt-3 text-white/75">
+                Je gaat naar huis met beweging, structuur en sociaal contact.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 lg:py-28">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8"
+        >
+          <!-- Foto Eric -->
+          <div class="rounded-[2rem] bg-mobisoft p-3 shadow-sm">
+            <div class="overflow-hidden rounded-[1.5rem] bg-white">
+              <!-- Vervang coach-eric.jpg door de echte foto -->
+              <img
+                src="00P1o00001lykLEEAY.png"
+                alt="Eric Mens - Coach Mobifit"
+                class="h-[500px] w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Tekst -->
+          <div>
+            <span class="font-bold text-mobiyellow uppercase tracking-wide">
+              Jouw coach
+            </span>
+
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl"
+            >
+              Begeleid door Eric Mens
+            </h2>
+
+            <p class="mt-6 text-lg leading-8 text-slate-600">
+              Eric Mens begeleidt de Mobifit-lessen met meer dan
+              <strong>26 jaar ervaring</strong> in het coachen van mensen naar
+              een fitter en gezonder leven.
+            </p>
+
+            <p class="mt-4 text-lg leading-8 text-slate-600">
+              Tijdens de lessen staat veilig en verantwoord bewegen centraal. De
+              oefeningen worden aangepast aan het niveau van de deelnemers,
+              zodat iedereen op zijn of haar eigen tempo kan meedoen.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-mobisoft p-5">
+                <p class="font-bold text-mobiblue">26+ jaar ervaring</p>
+                <p class="mt-1 text-sm text-slate-600">
+                  Ruime ervaring als personal trainer.
+                </p>
+              </div>
+
+              <div class="rounded-2xl bg-mobisoft p-5">
+                <p class="font-bold text-mobiblue">Persoonlijke begeleiding</p>
+                <p class="mt-1 text-sm text-slate-600">
+                  Aandacht voor iedere deelnemer.
+                </p>
+              </div>
+
+              <div class="rounded-2xl bg-mobisoft p-5">
+                <p class="font-bold text-mobiblue">Voor ieder niveau</p>
+                <p class="mt-1 text-sm text-slate-600">
+                  Ook geschikt als je lang niet hebt gesport.
+                </p>
+              </div>
+
+              <div class="rounded-2xl bg-mobisoft p-5">
+                <p class="font-bold text-mobiblue">Veilig bewegen</p>
+                <p class="mt-1 text-sm text-slate-600">
+                  Gericht op mobiliteit, kracht en vitaliteit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="info" class="bg-mobisoft py-20 lg:py-28">
+        <div
+          class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8"
+        >
+          <div>
+            <p class="font-bold text-mobiyellow">Praktische info</p>
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl"
+            >
+              Kom vrijblijvend proberen
+            </h2>
+            <dl class="mt-8 space-y-5 text-lg">
+              <div class="rounded-2xl bg-white p-5">
+                <dt class="font-bold text-mobiblue">Wanneer</dt>
+                <dd class="mt-1 text-slate-600">Elke donderdag om 16:00 uur</dd>
+              </div>
+              <div class="rounded-2xl bg-white p-5">
+                <dt class="font-bold text-mobiblue">Waar</dt>
+                <dd class="mt-1 text-slate-600">
+                  Polyvalente zaal De Spin, Dessel
+                </dd>
+              </div>
+              <div class="rounded-2xl bg-white p-5">
+                <dt class="font-bold text-mobiblue">Prijs</dt>
+                <dd class="mt-1 text-slate-600">
+                  De allereerste proefles is volledig gratis
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="rounded-[2rem] bg-white p-3 shadow-sm">
+            <div
+              class="grid min-h-[430px] place-items-center rounded-[1.5rem] border-2 border-dashed border-slate-300 bg-mobisoft p-8 text-center text-slate-500"
+            >
+              <img
+                class="rounded-[1.5rem]"
+                src="aa531f_9d032c57993a4027b2cc8fd97855a1fb~mv2.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 lg:py-28">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8"
+        >
+          <div class="rounded-[2rem] bg-mobisoft p-3">
+            <div
+              class="grid min-h-[360px] place-items-center rounded-[1.5rem] border-2 border-dashed border-slate-300 bg-white p-8 text-center text-slate-500"
+            >
+              <div>
+                <img class="rounded-[1.5rem]" src="Facebook5.jpg" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="font-bold text-mobiyellow">Initiatiefnemer</p>
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-mobiblue sm:text-4xl"
+            >
+              Een lokaal initiatief van Leo Boonen
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">
+              Mobifit is ontstaan vanuit het initiatief van Leo Boonen. Als
+              gepensioneerde en lokaal betrokken Desselaar zag hij hoe
+              belangrijk het is om ook op latere leeftijd in beweging te
+              blijven.
+            </p>
+            <p class="mt-5 text-lg leading-8 text-slate-600">
+              Leo is het eerste aanspreekpunt voor vragen en nieuwe deelnemers.
+              De lessen zelf worden begeleid door een gediplomeerde coach.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="bg-mobiblue px-4 py-16 text-white sm:px-6 lg:px-8"
+      >
+        <div
+          class="mx-auto max-w-5xl rounded-[2rem] bg-white p-8 text-center text-mobiblue shadow-soft lg:p-12"
+        >
+          <p class="font-bold text-mobiyellow">Gratis proefles</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+            Zin om eens mee te doen?
+          </h2>
+          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+            Neem contact op met Leo. Hij helpt je graag verder met praktische
+            info of je eerste gratis proefles.
+          </p>
+          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href="tel:+32474310355"
+              onclick="trackAnalyticsEvent('phone_click')"
+              class="rounded-full bg-mobiyellow px-7 py-4 font-bold text-mobiblue transition hover:bg-mobiblue hover:text-white"
+              >Bel Leo</a
+            >
+            <a
+              href="mailto:leoboonen1@gmail.com?subject=Gratis%20proefles%20Mobifit"
+              onclick="trackAnalyticsEvent('trial_click')"
+              class="rounded-full bg-mobiblue px-7 py-4 font-bold text-white transition hover:bg-mobiblue2"
+              >Mail voor proefles</a
+            >
+          </div>
+          <p class="mt-6 text-slate-600">
+            0474 31 03 55 · leoboonen1@gmail.com
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-mobiblue2 px-4 py-8 text-center text-sm text-white/65">
+      <p>© Mobifit</p>
+      <div class="mt-3 flex justify-center gap-6">
+        <a href="privacy.html" class="hover:text-white"> Privacyverklaring </a>
+        <a href="#" class="hover:text-white"> Cookiebeleid </a>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="bg-mobiblue2 px-4 py-8 text-center text-sm text-white/65">
-    <p>© Mobifit</p>
-    <div class="mt-3 flex justify-center gap-6">
-        <a href="privacy.html" class="hover:text-white">
-            Privacyverklaring
-        </a>
-        <a href="#" class="hover:text-white">
-            Cookiebeleid
-        </a>
-    </div>
-</footer>
+    <script>
+      const banner = document.getElementById("cookie-banner");
 
-  <script>
-    const banner = document.getElementById("cookie-banner");
+      function getAnalyticsConsent() {
+        return localStorage.getItem(ANALYTICS_CONSENT_KEY);
+      }
 
-    if (!localStorage.getItem("cookiesAccepted")) {
+      function loadAnalytics() {
+        if (document.querySelector("script[data-google-analytics]")) {
+          return;
+        }
+
+        const script = document.createElement("script");
+
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+        script.dataset.googleAnalytics = "true";
+
+        document.head.appendChild(script);
+
+        gtag("consent", "update", {
+          analytics_storage: "granted",
+        });
+
+        gtag("js", new Date());
+
+        gtag("config", GA_ID, {
+          anonymize_ip: true,
+        });
+      }
+
+      function disableAnalytics() {
+        gtag("consent", "update", {
+          analytics_storage: "denied",
+        });
+      }
+
+      function trackAnalyticsEvent(eventName, parameters = {}) {
+        if (getAnalyticsConsent() !== "granted") {
+          return;
+        }
+
+        gtag("event", eventName, parameters);
+      }
+
+      const storedConsent = getAnalyticsConsent();
+
+      if (storedConsent === "granted") {
+        loadAnalytics();
+      } else if (storedConsent === "denied") {
+        disableAnalytics();
+      } else {
         banner.classList.remove("hidden");
-    }
+      }
 
-    document.getElementById("acceptCookies").addEventListener("click", () => {
-        localStorage.setItem("cookiesAccepted", "true");
-        banner.classList.add("hidden");
-    });
-  </script>
-</body>
+      document
+        .getElementById("necessaryOnly")
+        .addEventListener("click", function () {
+          localStorage.setItem(ANALYTICS_CONSENT_KEY, "denied");
+          disableAnalytics();
+          banner.classList.add("hidden");
+        });
+
+      document
+        .getElementById("acceptAnalytics")
+        .addEventListener("click", function () {
+          localStorage.setItem(ANALYTICS_CONSENT_KEY, "granted");
+          loadAnalytics();
+          banner.classList.add("hidden");
+        });
+    </script>
+  </body>
 </html>
